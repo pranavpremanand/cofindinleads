@@ -5,10 +5,6 @@ import { useTheme } from "../Context/ThemeContext";
 import { useParams, Link } from "react-router-dom";
 import { LoadingSpinner } from "../Components/Loader";
 
-const Loading = () => (
-  <div className="text-center py-20 text-xl">Loading...</div>
-);
-
 const ServiceDetails = () => {
   const { title } = useParams();
   const [serviceDetail, setServiceDetail] = useState(null);
@@ -105,11 +101,13 @@ const ServiceDetails = () => {
             <section className="paddingbottom">
               <hr className="border border-primary" />
               <div className="grid md:grid-cols-2 gap-10 mt-6">
-                <img
-                  src={serviceDetail.imgagetwo}
-                  alt="image-two"
-                  className="rounded-xl"
-                />
+                <div className="h-full w-full aspect-[4/3] overflow-hidden rounded-xl">
+                  <img
+                    src={serviceDetail.imgagetwo}
+                    alt="image-two"
+                    className="rounded-xl object-cover h-full w-full"
+                  />
+                </div>
                 <div className="flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-[22px] font-bold dark:text-white text:darkbackground">

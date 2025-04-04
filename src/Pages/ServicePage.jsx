@@ -17,7 +17,7 @@ const ServicePage = () => {
         />{" "}
         <section className="relative flex flex-col items-center gap-10 z-10 w-full h-full ">
           <div
-            className="w-full min-h-[30rem] flex flex-col bg-cover bg-center justify-center items-center gap-10 paddingtop paddingbottom "
+            className="relative w-full min-h-[30rem] flex flex-col bg-cover bg-center justify-center items-center gap-10 paddingtop paddingbottom "
             style={{ backgroundImage: `url(${servicebanner})` }}
           >
             <div className="absolute inset-0 h-full w-full bg-black opacity-40" />

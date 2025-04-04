@@ -84,7 +84,7 @@ export const serviceDetails = [
     title: "UX/UI Design",
     heading: "At CoFindinLeads, Designing for Seamless Interactions",
     description:
-      "Great design is more than just eye candy—it’s about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
+      "Great design is more than just eye candy—it's about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
     secondHeading: "How our company will Help you in the Era of UI/UX Design",
     secondHeading_subheading: "Service Outcomes ",
     services: [
@@ -122,7 +122,7 @@ export const serviceDetails = [
     title: "AR & VR Development",
     heading: "At CoFindinLeads, Immersive Digital Realities",
     description:
-      "Great design is more than just eye candy—it’s about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
+      "Great design is more than just eye candy—it's about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
     secondHeading:
       "How our company will Help you in the Era of AR & VR Development",
     secondHeading_subheading: "Service Outcomes ",
@@ -160,7 +160,7 @@ export const serviceDetails = [
     title: " Full Stack Web Development",
     heading: "At CoFindinLeads, Building Powerful Digital Solutions",
     description:
-      "Great design is more than just eye candy—it’s about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
+      "Great design is more than just eye candy—it's about creating intuitive, engaging user experiences. Our UX/UI designers specialize in building interfaces that are as easy to use as they are beautiful. By studying user behavior and optimizing workflows, we craft interfaces that deliver exceptional usability and aesthetic appeal. From initial sketches to fully interactive prototypes, we ensure your digital product feels just right for every user.",
     secondHeading:
       "How our company will Help you in the Era of Full Stack Web Development",
     secondHeading_subheading: "Service Outcomes ",
@@ -269,41 +269,41 @@ export const serviceDetails = [
   {
     id: 7,
     bannerimg: Artificial_Intelligence_Solutions,
-    link: "artificial-intelligence-solutions",
+    link: "ml-ai-development",
     imageone: Artificial_Intelligence_Solutionssub1,
     imgagetwo: Artificial_Intelligence_Solutionssub2,
-    title: "Artificial Intelligence Solutions",
-    heading: "At CoFindinLeads, Artificial Intelligence Solutions",
+    title: "ML/AI Development",
+    heading: "At CoFindinLeads, Pioneering Intelligent Solutions",
     description:
-      "Artificial intelligence is at the forefront of digital transformation, enabling businesses to make smarter, data-driven decisions. We specialize in developing AI solutions that help you unlock insights, automate processes, and enhance your business operations. From machine learning and predictive analytics to natural language processing, our AI technologies can solve complex challenges and provide you with a competitive edge.",
+      "Machine Learning and Artificial Intelligence are transforming industries by enabling data-driven decision making and intelligent automation. We specialize in developing cutting-edge ML/AI solutions that help businesses unlock insights, optimize processes, and create innovative products. From predictive analytics to computer vision and natural language processing, our expertise in deep learning and neural networks delivers transformative results that give you a competitive advantage in today's digital landscape.",
     secondHeading:
-      "How our company will Help you in the Era of Artificial Intelligence Solutions",
+      "How our company will Help you in the Era of ML/AI Development",
     secondHeading_subheading: "Service Outcomes ",
     services: [
       {
-        title: "Predictive Analytics & Machine Learning ",
+        title: "Predictive Analytics & Machine Learning",
         description:
-          "Harness cosmic-scale data for trend forecasting, process automation, and interstellar recommendations.",
+          "Harness cosmic-scale data for trend forecasting, process automation, and interstellar recommendations with advanced ML models.",
       },
       {
-        title: " Natural Language Processing (NLP)",
+        title: "Deep Learning & Neural Networks",
         description:
-          "From earthly languages to extraplanetary dialects, our AI adapts and learns continuously. ",
+          "Develop sophisticated AI systems capable of complex pattern recognition and decision-making across multiple dimensions.",
       },
       {
-        title: "Quantum Computer Vision & Robotics",
+        title: "Computer Vision & NLP",
         description:
-          "Optimize workflows in manufacturing, healthcare, and deep-space exploration.",
+          "Create intelligent systems that understand visual data and human language with unprecedented accuracy.",
       },
     ],
-    thirdHeading: "Redefine the Future with AI Innovation",
+    thirdHeading: "Redefine the Future with ML/AI Innovation",
     thirdDescription:
-      "Artificial Intelligence is transforming industries, redefining possibilities, and shaping the future of technology. From intelligent automation to predictive analytics and personalized user experiences, AI-driven solutions empower businesses to enhance efficiency, optimize decision-making, and unlock new opportunities. Whether in healthcare, finance, customer service, or beyond, AI innovation is revolutionizing workflows, driving growth, and creating smarter, data-driven ecosystems. Embrace the power of AI to stay ahead of the curve, streamline operations, and build a future where intelligent systems seamlessly integrate with human potential for limitless innovation.",
+      "At CoFindinLeads, we are at the forefront of ML/AI development, creating intelligent systems that learn, adapt, and evolve. Our solutions leverage the latest advancements in machine learning, including reinforcement learning, generative AI, and transformer models, to solve complex business challenges. We build custom AI models tailored to your specific needs, whether it's optimizing supply chains, personalizing customer experiences, or automating complex decision processes. Partner with us to harness the full potential of ML/AI and transform your business operations with intelligent automation and data-driven insights.",
     whyMatter:
-      "Why It Matters Across Dimensions: AI insights empower you to adapt instantly to market shifts, planetary changes, and customer behaviors at universal scale.",
-    fourthHeading:
-      "Accelerating Innovation Through Artificial Intelligence Solutions",
-    fourthDescripiton: `Harness the power of Artificial Intelligence to drive transformation and unlock new possibilities for your business. AI-powered solutions are revolutionizing industries by enhancing automation, optimizing decision-making, and delivering intelligent, data-driven insights. From machine learning and predictive analytics to conversational AI and process automation, our cutting-edge AI solutions enable businesses to boost efficiency, improve customer experiences, and scale operations seamlessly. Stay ahead in the digital era by integrating AI into your workflows, accelerating innovation, and shaping a smarter, more connected future.`,
+      "Why It Matters Across Dimensions: ML/AI technologies empower businesses to adapt instantly to market shifts, anticipate customer needs, and optimize operations at universal scale, giving you an edge in any competitive landscape.",
+    fourthHeading: "Accelerating Innovation Through ML/AI Development",
+    fourthDescripiton:
+      "ML/AI development is revolutionizing how businesses operate by enabling intelligent automation, predictive analytics, and data-driven decision making. At CoFindinLeads, we develop custom machine learning models and AI solutions that transform raw data into actionable insights. From computer vision applications that enhance quality control to natural language processing systems that revolutionize customer service, our ML/AI solutions are designed to scale with your business needs. We help you stay ahead of the curve by implementing cutting-edge technologies like deep learning, neural networks, and generative AI that drive innovation and create new opportunities for growth.",
   },
   {
     id: 8,
@@ -417,7 +417,7 @@ export const serviceDetails = [
     thirdDescription:
       "Unlock the next generation of secure, decentralized, and intelligent solutions by integrating Artificial Intelligence with Blockchain Development. AI-driven blockchain solutions enhance transparency, security, and efficiency, enabling businesses to automate smart contracts, optimize transactions, and detect fraud in real-time. By leveraging AI-powered analytics, predictive modeling, and decentralized automation, organizations can revolutionize industries such as finance, supply chain, healthcare, and beyond. Embrace the future of innovation where AI and blockchain converge to drive trust, efficiency, and limitless possibilities in the digital economy.",
     whyMatter:
-      "Why It Matters Beyond Borders: Blockchain’s transparency fosters trust across multiple worlds, enabling seamless, fraud-resistant commerce.",
+      "Why It Matters Beyond Borders: Blockchain's transparency fosters trust across multiple worlds, enabling seamless, fraud-resistant commerce.",
     fourthHeading: "Accelerating Innovation Through Blockchain Development",
     fourthDescripiton: `Drive the future of digital transformation with cutting-edge blockchain development that ensures security, transparency, and efficiency. By leveraging decentralized technologies, smart contracts, and AI-driven automation, businesses can revolutionize transactions, enhance data integrity, and eliminate intermediaries. Our blockchain solutions empower industries like finance, supply chain, healthcare, and more with tamper-proof security, real-time processing, and trustless ecosystems. Stay ahead in the digital era by integrating blockchain technology to accelerate innovation, streamline operations, and unlock new business opportunities.`,
   },
@@ -430,7 +430,7 @@ export const serviceDetails = [
     title: " Game Development",
     heading: "At CoFindinLeads, Engaging Players with Cutting-Edge Technology",
     description:
-      "The gaming industry is evolving, and so are we. Our game development services are designed to create unforgettable, engaging experiences across mobile, console, and VR platforms. By combining the latest technologies with immersive storytelling and stunning graphics, we deliver games that captivate players from start to finish. Whether you're building a casual mobile game or an expansive VR universe, we’ve got the skills to bring your vision to life.",
+      "The gaming industry is evolving, and so are we. Our game development services are designed to create unforgettable, engaging experiences across mobile, console, and VR platforms. By combining the latest technologies with immersive storytelling and stunning graphics, we deliver games that captivate players from start to finish. Whether you're building a casual mobile game or an expansive VR universe, we've got the skills to bring your vision to life.",
     secondHeading:
       "How our company will Help you in the Era of Game Development",
     secondHeading_subheading: "Service Outcomes ",

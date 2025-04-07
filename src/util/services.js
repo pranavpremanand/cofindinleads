@@ -19,9 +19,9 @@ import Chatbot_DevelopmentSub1 from "../assets/images/services/Chatbot_Developme
 import AI_Development from "../assets/images/services/AI1.webp";
 import AI_DevelopmentSub1 from "../assets/images/services/AI2.webp";
 import AI_DevelopmentSub2 from "../assets/images/services/AI3.webp";
-import Machine_Learning_Solutions from "../assets/images/services/Artificial_Intelligence_Solutions.jpeg";
-import Machine_Learning_SolutionsSub1 from "../assets/images/services/Artificial_Intelligence_SolutionsSub1.jpeg";
-import Machine_Learning_SolutionsSub2 from "../assets/images/services/Artificial_Intelligence_SolutionsSub2.jpeg";
+import Machine_Learning_Solutions from "../assets/images/services/Artificial_Intelligence_Solutions.webp";
+import Machine_Learning_SolutionsSub1 from "../assets/images/services/Artificial_Intelligence_SolutionsSub1.webp";
+import Machine_Learning_SolutionsSub2 from "../assets/images/services/Artificial_Intelligence_SolutionsSub2.webp";
 
 import Data_Science_and_Analytics from "../assets/images/services/Data_Science_and_Analytics.jpeg";
 import Data_Science_and_Analyticssub1 from "../assets/images/services/Data_Science_and_Analyticssub1.jpeg";

@@ -12,6 +12,7 @@ import Industries from "../Components/Industries";
 import Ourvalues from "../Components/Ourvalues";
 import Portfolio from "../Components/Portfolio";
 import LeadForm from "../Components/landingpage/LeadForm";
+import BrandLogos from "../Components/BrandLogos";
 const HomePage = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
@@ -67,6 +68,7 @@ const HomePage = () => {
         <div className="relative z-10 w-full h-full">
           <Testimonials />
           <Highlights />
+          <BrandLogos />
           <LeadForm />
         </div>
       </div>

@@ -7,7 +7,6 @@ import {
   Database,
   Cloud,
   Box,
-  MemoryStick,
   Gamepad2,
   Network,
 } from "lucide-react";
@@ -19,15 +18,7 @@ import integrity from "../assets/images/png/integrity.png";
 import quality from "../assets/images/png/quality.png";
 import success from "../assets/images/png/success.png";
 import Infinite from "../assets/images/png/Infinite.png";
-//industries
-import governance from "../assets/images/industries/governance.jpg";
-import fintech from "../assets/images/industries/fintech.jpg";
-import healthcare from "../assets/images/industries/healthcare.jpg";
-import advancedrobotics from "../assets/images/industries/advancedrobotics.jpg";
-import energy from "../assets/images/industries/energy.jpg";
-import edtech from "../assets/images/industries/edtech.jpg";
-import space from "../assets/images/industries/space.jpg";
-import security from "../assets/images/industries/security.jpg";
+
 // porfolio image
 // Import all images at the top (Web Development)
 import FiveGHomesImg from "../assets/web-development-portfolio/5ghomes.png";
@@ -57,40 +48,79 @@ import cryptopadie from "../assets/portfolio/cryptopadie.png";
 import { CgWebsite } from "react-icons/cg";
 import { GoFileMedia } from "react-icons/go";
 import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
-import { MdOutlineDashboardCustomize } from "react-icons/md";
+import {
+  MdChatBubbleOutline,
+  MdOutlineDashboardCustomize,
+} from "react-icons/md";
 import {
   FaAppStoreIos,
+  FaFacebook,
+  FaFileContract,
   FaInstagram,
   FaLinkedin,
+  FaRobot,
   FaYoutube,
 } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
-import { SiFlutter } from "react-icons/si";
+import { SiEthereum, SiFlutter } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaL, FaXTwitter } from "react-icons/fa6";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { AiOutlineCamera } from "react-icons/ai";
+import { GiNetworkBars } from "react-icons/gi";
+import { RiLockPasswordLine } from "react-icons/ri";
+
+// industries
+import financial from "../assets/images/industries/Financial Services.webp";
+import healthcare from "../assets/images/industries/Healthcare.webp";
+import manufacturing from "../assets/images/industries/Manufacturing.webp";
+import energy from "../assets/images/industries/Energy.webp";
+import retail from "../assets/images/industries/Retail.webp";
+import realestate from "../assets/images/industries/Real Estate.webp";
+import food from "../assets/images/industries/Food and Beverage.webp";
+import transportation from "../assets/images/industries/Transportation.webp";
+import communication from "../assets/images/industries/Communication.webp";
+import electronics from "../assets/images/industries/Consumer Electronics.webp";
+import aerospace from "../assets/images/industries/Aerospace and Defense.webp";
+import chemicals from "../assets/images/industries/Chemicals.webp";
+import mining from "../assets/images/industries/Mining.webp";
+import agriculture from "../assets/images/industries/Agriculture.webp";
+import construction from "../assets/images/industries/Construction.webp";
+import hospitality from "../assets/images/industries/Hospitality.webp";
+import entertainment from "../assets/images/industries/Entertainment.webp";
+import consulting from "../assets/images/industries/Consulting.webp";
+import legal from "../assets/images/industries/Legal.webp";
+
 
 export const companyDetails = {
   name: "CoFindinLeads",
-  email: "cagds@example.com",
+  email: "Support@cofindinleads.com",
   phone: "+91-7996767333",
   address:
     "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Bengaluru, Karnataka 560076",
   socialLinks: [
     {
-      href: "",
+      href: "https://www.facebook.com/share/p/1AhwFR8kso/",
+      icon: FaFacebook,
+    },
+    {
+      href: "https://www.instagram.com/cofindinleads/profilecard/?igsh=MWkzenM0enhlejNwZg==",
+      icon: FaInstagram,
+    },
+    {
+      href: "https://x.com/Cofindinleads?t=6FZKiH6GeEtH-9EC2ILOrQ&s=09",
+      icon: FaXTwitter,
+    },
+    {
+      href: "https://www.linkedin.com/company/106121125/",
       icon: FaLinkedin,
     },
     {
-      href: "",
-      icon: FaInstagram,
-    },
-    { href: "", icon: FaXTwitter },
-    {
-      href: "",
+      href: "https://youtube.com/@cofindinleads?si=FgMwOoORMmWE8Qwv",
       icon: FaYoutube,
     },
   ],
-  whatsapp: "",
+  whatsapp: "https://wa.me/919996767333",
 };
 
 export const services = [
@@ -143,11 +173,11 @@ export const services = [
     bgColor: "bg-gray-900",
   },
   {
-    title: "ML/AI Development",
-    link: "ml-ai-development",
+    title: "Machine Learning Development",
+    link: "ml-development",
     description:
-      "Integrate machine learning and AI systems to unlock automation, predictive insights, and cognitive capabilities.",
-    icon: MemoryStick,
+      "Leverage machine learning to automate processes, uncover predictive insights, and optimize data-driven decision-making.",
+    icon: "MemoryStick",
     bgColor: "bg-gray-900",
   },
   {
@@ -189,6 +219,14 @@ export const services = [
       "Create intelligent IoT ecosystems with real-time connectivity, monitoring, and automation at scale.",
     icon: Network,
     bgColor: "bg-gray-900",
+  },
+  {
+    title: "AI Development",
+    link: "ai-development",
+    description:
+      "Build intelligent systems with advanced AI capabilities, including reasoning, natural language understanding, and autonomous decision-making.",
+    icon: "BrainCircuit",
+    bgColor: "bg-indigo-900",
   },
 ];
 
@@ -454,63 +492,204 @@ export const appDevelopmentServices = [
   },
 ];
 
-export const futureTechSectors = [
+// ai development services
+export const aiDevelopmentServices = [
   {
     id: 1,
-    img: governance,
-    title: "Governance & Law",
+    title: "AI-Powered Chatbots",
+    img: MdChatBubbleOutline,
     description:
-      "Transforming governance through AI-powered policy automation, transparent decentralized infrastructure, and intelligent civic systems for smarter societies.",
+      "We design intelligent chatbots powered by NLP and machine learning to automate support, qualify leads, and offer personalized conversations across web and mobile platforms.",
   },
   {
     id: 2,
-    img: fintech,
-    title: "Fintech & Decentralized Economy",
+    title: "Predictive Analytics Solutions",
+    img: BsGraphUpArrow,
     description:
-      "Revolutionizing finance with AI-integrated DeFi platforms, blockchain-based economic models, and quantum-secure digital transactions.",
+      "Leverage AI-driven data modeling and forecasting to unlock actionable insights. Our predictive systems help you anticipate trends, optimize operations, and stay ahead of the curve.",
   },
   {
     id: 3,
-    img: healthcare,
-    title: "Healthcare & Bioinformatics",
+    title: "Computer Vision Applications",
+    img: AiOutlineCamera,
     description:
-      "Empowering healthcare with predictive AI diagnostics, genome-personalized treatments, and brain-computer interfaces for cognitive and physical well-being.",
+      "We build advanced computer vision models for facial recognition, object detection, quality inspection, and more — enabling machines to interpret visual data like never before.",
   },
   {
     id: 4,
-    img: advancedrobotics,
-    title: "Advanced Robotics & Automation",
+    title: "AI Automation & Integration",
+    img: FaRobot,
     description:
-      "Pioneering autonomous robotics for smart manufacturing, AI-driven R&D collaborators, and self-operating production ecosystems.",
+      "From automating repetitive tasks to enhancing workflows with intelligent decision-making, we integrate AI seamlessly into your existing tech stack to improve efficiency and reduce costs.",
+  },
+];
+
+// blockchain development services
+export const blockchainDevelopmentServices = [
+  {
+    id: 1,
+    title: "Smart Contract Development",
+    img: FaFileContract,
+    description:
+      "We create secure, efficient, and tamper-proof smart contracts on platforms like Ethereum and Solana — perfect for automating transactions and agreements without intermediaries.",
+  },
+  {
+    id: 2,
+    title: "Decentralized Applications (dApps)",
+    img: SiEthereum,
+    description:
+      "Build powerful, scalable dApps that harness the potential of decentralized ecosystems. From DeFi to NFT platforms, we engineer intuitive and user-centric solutions.",
+  },
+  {
+    id: 3,
+    title: "Blockchain Consulting & Architecture",
+    img: GiNetworkBars,
+    description:
+      "We offer strategic guidance, architecture design, and implementation roadmaps to help your business unlock blockchain's potential and choose the right technology stack.",
+  },
+  {
+    id: 4,
+    title: "Private & Consortium Blockchains",
+    img: RiLockPasswordLine,
+    description:
+      "Implement permissioned blockchain networks tailored to your enterprise needs — with customizable consensus mechanisms, robust access control, and seamless integrations.",
+  },
+];
+
+export const futureTechSectors = [
+  {
+    id: 1,
+    img: financial,
+    title: "Financial Services",
+    description:
+      "Modernizing finance with AI-driven fraud detection, smart contracts, and decentralized financial ecosystems.",
+  },
+  {
+    id: 2,
+    img: healthcare,
+    title: "Healthcare",
+    description:
+      "Transforming patient care through AI diagnostics, telemedicine, and personalized genomic treatments.",
+  },
+  {
+    id: 3,
+    img: manufacturing,
+    title: "Manufacturing",
+    description:
+      "Empowering smart factories with AI automation, digital twins, and predictive maintenance systems.",
+  },
+  {
+    id: 4,
+    img: energy,
+    title: "Energy",
+    description:
+      "Advancing clean energy with AI-optimized grids, decentralized solar, and sustainable power innovations.",
   },
   {
     id: 5,
-    img: energy,
-    title: "Energy & Climate Sustainability",
+    img: retail,
+    title: "Retail",
     description:
-      "Redefining sustainability through AI-guided energy grids, decentralized clean tech, and quantum solutions for global resource optimization.",
+      "Reinventing shopping with immersive tech, personalized AI experiences, and blockchain-based transactions.",
   },
   {
     id: 6,
-    img: edtech,
-    title: "Edtech & Meta-Learning",
+    img: realestate,
+    title: "Real Estate",
     description:
-      "Accelerating learning with immersive AI tutors, real-time adaptive learning systems, and quantum-based cognitive expansion platforms.",
+      "Redefining property through virtual real estate, smart contracts, and AI-driven valuation systems.",
   },
-  // {
-  //   id: 7,
-  //   img: space,
-  //   title: "Space & Extraterrestrial Expansion",
-  //   description:
-  //     "Exploring the cosmos with AI-augmented navigation, quantum-aided terraforming systems, and interstellar trade powered by Web 5.0 tech.",
-  // },
-  // {
-  //   id: 8,
-  //   img: security,
-  //   title: "Advanced Defense & Autonomous Security",
-  //   description:
-  //     "Securing the future with autonomous defense systems, AI-coordinated surveillance, and next-gen weaponry powered by directed energy and quantum precision.",
-  // },
+  {
+    id: 7,
+    img: food,
+    title: "Food and Beverage",
+    description:
+      "Innovating food systems with smart agriculture, lab-grown alternatives, and blockchain for traceability.",
+  },
+  {
+    id: 8,
+    img: transportation,
+    title: "Transportation",
+    description:
+      "Accelerating mobility with autonomous vehicles, AI-powered logistics, and smart infrastructure.",
+  },
+  {
+    id: 9,
+    img: communication,
+    title: "Communication",
+    description:
+      "Revolutionizing connection with AI translators, decentralized communication tools, and quantum networks.",
+  },
+  {
+    id: 10,
+    img: electronics,
+    title: "Consumer Electronics",
+    description:
+      "Shaping the future with AI-integrated devices, wearable tech, and ambient intelligence.",
+  },
+  {
+    id: 11,
+    img: aerospace,
+    title: "Aerospace and Defense",
+    description:
+      "Enhancing aerospace innovation with autonomous systems, space tech, and AI-driven defense strategies.",
+  },
+  {
+    id: 12,
+    img: chemicals,
+    title: "Chemicals",
+    description:
+      "Transforming materials science with AI-based molecular design, green chemistry, and smart compounds.",
+  },
+  {
+    id: 13,
+    img: mining,
+    title: "Mining",
+    description:
+      "Modernizing mining with autonomous machinery, AI for exploration, and eco-conscious extraction.",
+  },
+  {
+    id: 14,
+    img: agriculture,
+    title: "Agriculture",
+    description:
+      "Boosting yield with precision farming, smart irrigation, and AI crop management systems.",
+  },
+  {
+    id: 15,
+    img: construction,
+    title: "Construction",
+    description:
+      "Building smart with robotic automation, 3D printing, and real-time AI project analytics.",
+  },
+  {
+    id: 16,
+    img: hospitality,
+    title: "Hospitality",
+    description:
+      "Elevating guest experience with AI concierges, smart hotel tech, and immersive booking tools.",
+  },
+  {
+    id: 17,
+    img: entertainment,
+    title: "Entertainment",
+    description:
+      "Creating immersive experiences with AI-generated media, virtual concerts, and gamified storytelling.",
+  },
+  {
+    id: 18,
+    img: consulting,
+    title: "Consulting",
+    description:
+      "Enhancing insights with predictive analytics, AI strategy modeling, and automation in advisory services.",
+  },
+  {
+    id: 19,
+    img: legal,
+    title: "Legal",
+    description:
+      "Reforming law with AI contract analysis, legal bots, and decentralized dispute resolution systems.",
+  },
 ];
 
 export const webPortfolio = [

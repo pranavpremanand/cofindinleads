@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { companyDetails } from "../../util/constant";
+import PhoneInput from "react-country-phone-input";
+import "react-country-phone-input/lib/style.css";
 
 const LeadForm = () => {
   const [spinner, setSpinner] = useState(false);
@@ -10,18 +12,30 @@ const LeadForm = () => {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
     reset,
+    setError,
   } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = async (values) => {
     if (spinner) return;
+
+    // Validate phone number
+    if (!values.phoneNumber || values.phoneNumber.length < 5) {
+      setError("phoneNumber", {
+        type: "manual",
+        message: "Phone number is required",
+      });
+      return;
+    }
+
     setSpinner(true);
 
     var emailBody = "Name: " + values.fullName + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
-    emailBody += "Phone: " + values.phoneNumber + "\n\n";
+    emailBody += "Phone: +" + values.phoneNumber + "\n\n";
     emailBody += "Subject: " + values.subject + "\n\n";
     emailBody += "Message:\n" + values.message;
 
@@ -59,7 +73,7 @@ const LeadForm = () => {
   };
 
   return (
-    <div id="contact" className="w-full max-w-2xl mx-auto px-4    mb-[4rem] ">
+    <div id="contact" className="w-full max-w-2xl mx-auto px-4 pt-10 pb-[4rem]">
       <div className="dark:bg-transparent bg-darkblack sm:p-7 rounded-xl">
         <h2 className="text-3xl font-bold mb-8 text-center text-white">
           Schedule A Free Consultation
@@ -79,7 +93,7 @@ const LeadForm = () => {
                 type="text"
                 placeholder="John Doe"
                 {...register("fullName", { required: "Full Name is required" })}
-                className="p-3 rounded-xl bg-slate-800 border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.fullName && (
                 <p className="text-red-500 text-sm">
@@ -106,7 +120,7 @@ const LeadForm = () => {
                     message: "Invalid email address",
                   },
                 })}
-                className="p-3 rounded-xl bg-slate-800 border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email.message}</p>
@@ -115,20 +129,32 @@ const LeadForm = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label
-                htmlFor="phone"
-                className="text-sm font-medium text-gray-300"
-              >
-                Phone
+              <label className="text-sm font-medium text-gray-300">
+                Phone Number
               </label>
-              <input
-                {...register("phone", { required: "Phone is required" })}
-                type="text"
-                placeholder="+91"
-                className="p-3 rounded-xl bg-slate-800 border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+              <Controller
+                name="phoneNumber"
+                control={control}
+                rules={{ required: "Phone number is required" }}
+                render={({ field: { ref, ...field } }) => (
+                  <PhoneInput
+                    {...field}
+                    inputRef={ref}
+                    placeholder="Enter your phone number"
+                    country="in"
+                    inputProps={{
+                      name: "phoneNumber",
+                      required: true,
+                      className:
+                        "p-3 !pl-10 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all",
+                    }}
+                  />
+                )}
               />
-              {errors.phone && (
-                <p className="text-red-500 text-sm">{errors.phone.message}</p>
+              {errors.phoneNumber && (
+                <p className="text-red-500 text-sm">
+                  {errors.phoneNumber.message}
+                </p>
               )}
             </div>
 
@@ -143,7 +169,7 @@ const LeadForm = () => {
                 {...register("subject", { required: "Subject is required" })}
                 type="text"
                 placeholder="Subject"
-                className="p-3 rounded-xl bg-slate-800 border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject.message}</p>
@@ -163,7 +189,7 @@ const LeadForm = () => {
               placeholder="Tell us about your project or needs..."
               rows="5"
               {...register("message", { required: "Message is required" })}
-              className="p-3 rounded-xl bg-slate-800 border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+              className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
             />
             {errors.message && (
               <p className="text-red-500 text-sm">{errors.message.message}</p>
@@ -180,7 +206,7 @@ const LeadForm = () => {
             {spinner ? (
               <div className="flex items-center">
                 <svg
-                  className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                  className="spin -ml-1 mr-3 h-5 w-5 text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"

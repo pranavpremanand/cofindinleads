@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/headerlogo.png";
 import { useTheme } from "../Context/ThemeContext";
 import { companyDetails } from "../util/constant";
+import { PhoneCall } from "lucide-react";
 
 const Footer = () => {
   const { theme } = useTheme();
@@ -84,6 +85,21 @@ const Footer = () => {
                     <obj.icon className="hover:text-darkblack dark:hover:text-primary cursor-ponter" />
                   </Link>
                 ))}
+              </div>
+              <div className="mt-6 text-white text-sm">
+                Phone :
+                <a href={`tel:${companyDetails.phone}`} className="ml-2">
+                  {companyDetails.phone}
+                </a>
+              </div>
+              <div className="mt-4 text-white text-sm">
+                Email :
+                <a href={`mailto:${companyDetails.email}`} className="ml-2">
+                  {companyDetails.email}
+                </a>
+              </div>
+              <div className="mt-4 text-white text-sm">
+                Address :<span className="ml-2">{companyDetails.address}</span>
               </div>
             </div>
           </div>

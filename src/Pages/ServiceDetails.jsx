@@ -47,7 +47,9 @@ const ServiceDetails = () => {
                 <h1 className="section-heading dark:text-white text-darkblack">
                   {serviceDetail.heading}
                 </h1>
-                <p className="desc mt-5">{serviceDetail.description}</p>
+                <p className="desc mt-5 whitespace-pre-line">
+                  {serviceDetail.description}
+                </p>
               </div>
             </section>
 
@@ -71,21 +73,23 @@ const ServiceDetails = () => {
                   ))}
                 </ul>
               </div>
-              <div>
+              <div className="flex flex-col gap-6">
                 <img
                   src={serviceDetail.imageone}
                   alt="image-one"
-                  className="rounded-xl max-h-[30rem] w-full object-cover"
+                  className="rounded-xl aspect-[4/3] h-full w-full object-cover"
                 />
               </div>
             </section>
 
             {/* SECTION THREE */}
-            <section>
+            <section className="paddingbottom">
               <h2 className="text-[22px] font-bold dark:text-white text:darkbackground">
                 {serviceDetail.thirdHeading}
               </h2>
-              <p className="desc my-6">{serviceDetail.thirdDescription}</p>
+              <p className="desc my-6 whitespace-pre-line">
+                {serviceDetail.thirdDescription}
+              </p>
               <p className="desc">
                 <strong>{serviceDetail.whyMatter.split(":")[0]}:</strong>
                 {serviceDetail.whyMatter.split(":")[1]}
@@ -101,11 +105,11 @@ const ServiceDetails = () => {
             <section className="paddingbottom">
               <hr className="border border-primary" />
               <div className="grid md:grid-cols-2 gap-10 mt-6">
-                <div className="h-full w-full aspect-[4/3] overflow-hidden rounded-xl">
+                <div className="h-full w-full overflow-hidden rounded-xl">
                   <img
                     src={serviceDetail.imgagetwo}
                     alt="image-two"
-                    className="rounded-xl object-cover h-full w-full"
+                    className="rounded-xl aspect-[4/3] object-cover h-full w-full"
                   />
                 </div>
                 <div className="flex flex-col justify-between h-full">
@@ -113,7 +117,7 @@ const ServiceDetails = () => {
                     <h3 className="text-[22px] font-bold dark:text-white text:darkbackground">
                       {serviceDetail.fourthHeading}
                     </h3>
-                    <p className="desc mt-6">
+                    <p className="desc mt-6 whitespace-pre-line">
                       {serviceDetail.fourthDescripiton}
                     </p>
                   </div>

@@ -70,7 +70,7 @@ const LandingHeader = () => {
               to="/blogs"
               className="text-white hover:text-blue-300 dark:hover:text-primary cursor-pointer"
             >
-              Blog
+              Blogs
             </Link>
             <Scrolllink
               to="contact"
@@ -131,7 +131,7 @@ const LandingHeader = () => {
               offset={-140}
               duration={1000}
               activeClass="active-link text-blue-300 dark:text-primary"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               About Us
             </Scrolllink>
@@ -144,15 +144,15 @@ const LandingHeader = () => {
               offset={-140}
               duration={1000}
               activeClass="active-link text-blue-300 dark:text-primary"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Services
             </Scrolllink>
             <Link
-              to="/blog"
+              to="/blogs"
               className="block px-3  pt-2 pb-3 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
-              Blog
+              Blogs
             </Link>
             <Scrolllink
               to="contact"
@@ -162,7 +162,7 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              className="w-full  text-center bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition-colors"
+              className="cursor-pointer block px-3  pt-2 pb-3 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Contact Us
             </Scrolllink>

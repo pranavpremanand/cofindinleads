@@ -6,6 +6,7 @@ import ScrollToTop from "../Components/ScrollToTop";
 import WhatsAppIcon from "../Components/WhatsApp";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PopupContactForm from "../Components/PopupContactForm";
 const AppLayout = () => {
   AOS.init({
     once: true,
@@ -16,6 +17,7 @@ const AppLayout = () => {
     <div>
       <Header />
       <WhatsAppIcon />
+      <PopupContactForm />
       <ScrollToTop />
       <div className="bg-white dark:bg-darkbackground">
         <Outlet />

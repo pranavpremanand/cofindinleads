@@ -8,6 +8,7 @@ import UnlockEfficiency from "../Components/UnlockEfficiency";
 import Faq from "../Components/Faq";
 import BlogBody from "../Components/blog/blogBody";
 import { blogPosts } from "../util/blog";
+
 const AboutUsPage = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
@@ -37,7 +38,7 @@ const AboutUsPage = () => {
                   About Us
                 </h1>
                 <p data-aos="fade-right" className="desc mt-10">
-                  At CoFindinLeads, we don’t just build products – we craft
+                  At CoFindinLeads, we don't just build products – we craft
                   solutions that empower businesses to thrive in a fast-moving,
                   technology-driven world. From the start, our focus has been on
                   understanding the unique needs of each client and delivering
@@ -46,15 +47,42 @@ const AboutUsPage = () => {
                   alongside you to transform your ideas into impactful,
                   sustainable technology. <br />
                   Our journey began with a shared vision to bridge the gap
-                  between creativity and technology. Over the years, we’ve built
+                  between creativity and technology. Over the years, we've built
                   a reputation for delivering high-quality, scalable solutions
                   that help our clients navigate the challenges of the digital
-                  age. Whether you’re a startup looking to make your mark or an
+                  age. Whether you're a startup looking to make your mark or an
                   established brand seeking to innovate, we are here to support
                   you every step of the way.
                 </p>
+
+                {/* Know Our CEO Section */}
+                <div className="mt-8" data-aos="fade-right">
+                  <h3 className="text-2xl font-semibold text-darkblack dark:text-white mb-4">
+                    Know Our CEO
+                  </h3>
+                  <div className="space-y-3">
+                    <a
+                      href="https://thecconnects.com/ussuof-m-khan-founder-ceo-at-cofindinleads-exclusive-interview/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      • Exclusive Interview with Ussuof M Khan, Founder & CEO at
+                      CoFindinLeads
+                    </a>
+                    <a
+                      href="https://boroktimes.com/from-humble-beginnings-to-global-success-the-inspiring-journey-of-ussuof-m-khan/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      • From Humble Beginnings to Global Success: The Inspiring
+                      Journey of Ussuof M Khan
+                    </a>
+                  </div>
+                </div>
               </div>
-              <img data-aos="fade-left" src={aboutusimg} alt="aboutus-img" />
+              <img data-aos="fade-left" src={aboutusimg} alt="aboutus-img" className="h-full object-cover" />
             </div>
           </div>
         </section>
@@ -83,7 +111,6 @@ const AboutUsPage = () => {
               ))}
             </div>
           </div>
-          {/* <Faq /> */}
         </section>
       </div>
     </div>

@@ -12,11 +12,16 @@ const BlogView = lazy(() => import("./Pages/BlogView"));
 
 const ServicePage = lazy(() => import("./Pages/ServicePage"));
 const ServiceDetails = lazy(() => import("./Pages/ServiceDetails"));
-const LandingPage = lazy(() => import("./Pages/LandingPage"));
+const LandingPage = lazy(() => import("./Pages/landingpages/LandingPage"));
+const AILandingPage = lazy(() => import("./Pages/landingpages/AIDevelopment"));
+const BlockchainLandingPage = lazy(() =>
+  import("./Pages/landingpages/Blockchain")
+);
 const Thankyou = lazy(() => import("./Pages/Thankyou"));
 const Portfolio = lazy(() => import("./Pages/Portfolio"));
 
 import { LoadingSpinner } from "./Components/Loader";
+import PopupContactForm from "./Components/PopupContactForm";
 
 const AppRouter = createBrowserRouter([
   {
@@ -70,6 +75,7 @@ const AppRouter = createBrowserRouter([
             },
           }}
         />
+        <PopupContactForm />
         <LandingPage page={"web"} />
       </Suspense>
     ),
@@ -88,7 +94,46 @@ const AppRouter = createBrowserRouter([
             },
           }}
         />
+        <PopupContactForm />
         <LandingPage page={"app"} />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/ai-development",
+    element: (
+      <Suspense fallback={<LoadingSpinner />}>
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              zIndex: "10000",
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
+        <PopupContactForm />
+        <AILandingPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/blockchain-development",
+    element: (
+      <Suspense fallback={<LoadingSpinner />}>
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              zIndex: "10000",
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
+        <PopupContactForm />
+        <BlockchainLandingPage />
       </Suspense>
     ),
   },

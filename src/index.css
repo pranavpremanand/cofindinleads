@@ -40,6 +40,16 @@ html {
   }
 } */
 
+.react-tel-input .flag-dropdown {
+  background-color: transparent !important;
+  border: none !important;
+}
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: transparent !important;
+  outline: none;
+}
+
 @layer utilities {
   .wrapper {
     @apply max-w-7xl mx-auto px-4;

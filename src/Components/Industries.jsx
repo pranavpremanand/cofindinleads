@@ -16,13 +16,13 @@ const Industries = () => {
             className="relative bg-white rounded-lg shadow-lg overflow-hidden group transition-all duration-300 hover:shadow-xl h-64"
           >
             <img
-              //   src={`/api/placeholder/400/300`}
               src={sector.img}
               alt={sector.title}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
 
-            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-50 opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
 
             <div className="absolute inset-0 flex flex-col justify-end p-4 transition-all duration-300">
               <h3 className="text-xl font-semibold text-white mb-1 group-hover:mb-3 transition-all duration-300">

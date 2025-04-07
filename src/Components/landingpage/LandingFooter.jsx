@@ -111,6 +111,21 @@ const LandingFooter = () => {
                   </Link>
                 ))}
               </div>
+              <div className="mt-6 text-white text-sm">
+                Phone :
+                <a href={`tel:${companyDetails.phone}`} className="ml-2">
+                  {companyDetails.phone}
+                </a>
+              </div>
+              <div className="mt-4 text-white text-sm">
+                Email :
+                <a href={`mailto:${companyDetails.email}`} className="ml-2">
+                  {companyDetails.email}
+                </a>
+              </div>
+              <div className="mt-4 text-white text-sm">
+                Address :<span className="ml-2">{companyDetails.address}</span>
+              </div>
             </div>
           </div>
 

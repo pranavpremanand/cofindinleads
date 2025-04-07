@@ -9,6 +9,8 @@ import {
   Box,
   Gamepad2,
   Network,
+  MemoryStick,
+  BrainCircuit,
 } from "lucide-react";
 import file from "../assets/images/png/file.png";
 import graph from "../assets/images/png/graph.png";
@@ -177,7 +179,7 @@ export const services = [
     link: "ml-development",
     description:
       "Leverage machine learning to automate processes, uncover predictive insights, and optimize data-driven decision-making.",
-    icon: "MemoryStick",
+    icon: MemoryStick,
     bgColor: "bg-gray-900",
   },
   {
@@ -225,7 +227,7 @@ export const services = [
     link: "ai-development",
     description:
       "Build intelligent systems with advanced AI capabilities, including reasoning, natural language understanding, and autonomous decision-making.",
-    icon: "BrainCircuit",
+    icon: BrainCircuit,
     bgColor: "bg-indigo-900",
   },
 ];

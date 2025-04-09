@@ -50,6 +50,10 @@ html {
   outline: none;
 }
 
+.country .country-name{
+  color: #000000 !important;
+}
+
 @layer utilities {
   .wrapper {
     @apply max-w-7xl mx-auto px-4;

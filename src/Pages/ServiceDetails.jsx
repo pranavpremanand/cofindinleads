@@ -4,6 +4,8 @@ import { Circle } from "lucide-react";
 import { useTheme } from "../Context/ThemeContext";
 import { useParams, Link } from "react-router-dom";
 import { LoadingSpinner } from "../Components/Loader";
+import LeadForm from "../Components/landingpage/LeadForm";
+import Ourvalues from "../Components/Ourvalues";
 
 const ServiceDetails = () => {
   const { title } = useParams();
@@ -130,6 +132,8 @@ const ServiceDetails = () => {
           </div>
         </section>
       </div>
+      <Ourvalues />
+      <LeadForm />
     </div>
   );
 };

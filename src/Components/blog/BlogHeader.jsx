@@ -1,8 +1,6 @@
 import React from "react";
 import { useTheme } from "../../Context/ThemeContext";
 
-import SearchIcon from "../../assets/images/svg/SearchIcon.svg";
-
 function BlogHeader() {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";

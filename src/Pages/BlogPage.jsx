@@ -15,7 +15,6 @@ function BlogPage() {
           ))}
         </div>
       </div>
-      {/* <Faq /> */}
     </div>
   );
 }

@@ -10,7 +10,7 @@ const ServicesGrid = () => {
   const isDarkMode = theme === "dark";
   const navigate = useNavigate();
   const navigateTo = (link) => {
-    navigate(`/services/${link}`);
+    navigate(link);
   };
   return (
     <section>

@@ -23,12 +23,12 @@ const Portfolio = lazy(() => import("./Pages/Portfolio"));
 
 import { LoadingSpinner } from "./Components/Loader";
 import PopupContactForm from "./Components/PopupContactForm";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const AppRouter = createBrowserRouter([
   {
     path: "/",
     element: (
-      // <LoadingSpinner />
       <Suspense fallback={<LoadingSpinner />}>
         <Toaster
           position="top-bottom"
@@ -67,6 +67,7 @@ const AppRouter = createBrowserRouter([
     path: "/web-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
         <Toaster
           position="top-bottom"
           toastOptions={{
@@ -86,6 +87,7 @@ const AppRouter = createBrowserRouter([
     path: "/app-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
         <Toaster
           position="top-bottom"
           toastOptions={{
@@ -105,6 +107,7 @@ const AppRouter = createBrowserRouter([
     path: "/ai-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
         <Toaster
           position="top-bottom"
           toastOptions={{
@@ -124,6 +127,7 @@ const AppRouter = createBrowserRouter([
     path: "/blockchain-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
         <Toaster
           position="top-bottom"
           toastOptions={{

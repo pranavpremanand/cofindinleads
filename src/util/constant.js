@@ -93,7 +93,6 @@ import entertainment from "../assets/images/industries/Entertainment.webp";
 import consulting from "../assets/images/industries/Consulting.webp";
 import legal from "../assets/images/industries/Legal.webp";
 
-
 export const companyDetails = {
   name: "CoFindinLeads",
   email: "Support@cofindinleads.com",
@@ -128,7 +127,8 @@ export const companyDetails = {
 export const services = [
   {
     title: "Mobile App Development",
-    link: "mobile-app-development",
+    link: "/app-development",
+    // link: "mobile-app-development",
     description:
       "Design and deploy robust mobile apps tailored for both iOS and Android, optimized for performance and scalability.",
     icon: Smartphone,
@@ -136,7 +136,7 @@ export const services = [
   },
   {
     title: "UX/UI Design",
-    link: "ux-ui-design",
+    link: "/services/ux-ui-design",
     description:
       "Deliver visually compelling and user-centric designs that elevate digital experiences across devices.",
     icon: Users,
@@ -144,7 +144,7 @@ export const services = [
   },
   {
     title: "AR & VR Development",
-    link: "ar-vr-development",
+    link: "/services/ar-vr-development",
     description:
       "Build immersive augmented and virtual reality solutions for next-gen storytelling, training, and interaction.",
     icon: Box,
@@ -152,7 +152,7 @@ export const services = [
   },
   {
     title: "Full Stack Web Development",
-    link: "full-stack-web-development",
+    link: "/web-development",
     description:
       "Engineer high-performing websites and applications using modern front-end and back-end technologies.",
     icon: Code,
@@ -160,7 +160,7 @@ export const services = [
   },
   {
     title: "AI Calling Agency",
-    link: "ai-calling-agency",
+    link: "/services/ai-calling-agency",
     description:
       "Revolutionize customer engagement with intelligent voice agents capable of natural, 24/7 conversations.",
     icon: Cpu,
@@ -168,7 +168,7 @@ export const services = [
   },
   {
     title: "Chatbot Development",
-    link: "chatbot-development",
+    link: "/services/chatbot-development",
     description:
       "Deploy smart chatbots that automate support, enhance engagement, and adapt across platforms.",
     icon: Bot,
@@ -176,7 +176,7 @@ export const services = [
   },
   {
     title: "Machine Learning Development",
-    link: "ml-development",
+    link: "/services/ml-development",
     description:
       "Leverage machine learning to automate processes, uncover predictive insights, and optimize data-driven decision-making.",
     icon: MemoryStick,
@@ -184,7 +184,7 @@ export const services = [
   },
   {
     title: "Robot Process Automation",
-    link: "robot-process-automation",
+    link: "/services/robot-process-automation",
     description:
       "Optimize workflows with bots that handle repetitive digital tasks with speed and precision.",
     icon: Bot,
@@ -192,7 +192,7 @@ export const services = [
   },
   {
     title: "Data Science & Analytics",
-    link: "data-science-analytics",
+    link: "/services/data-science-analytics",
     description:
       "Turn complex data into clear decisions with custom analytics, modeling, and visualization solutions.",
     icon: Database,
@@ -200,7 +200,7 @@ export const services = [
   },
   {
     title: "Blockchain Development",
-    link: "blockchain-development",
+    link: "/blockchain-development",
     description:
       "Engineer secure, decentralized applications leveraging blockchain, smart contracts, and Web3 protocols.",
     icon: Cloud,
@@ -208,7 +208,7 @@ export const services = [
   },
   {
     title: "Game Development",
-    link: "game-development",
+    link: "/services/game-development",
     description:
       "Craft captivating game experiences using innovative mechanics, rich storytelling, and cross-platform support.",
     icon: Gamepad2,
@@ -216,7 +216,7 @@ export const services = [
   },
   {
     title: "IoT Development",
-    link: "iot-development",
+    link: "/services/iot-development",
     description:
       "Create intelligent IoT ecosystems with real-time connectivity, monitoring, and automation at scale.",
     icon: Network,
@@ -224,14 +224,13 @@ export const services = [
   },
   {
     title: "AI Development",
-    link: "ai-development",
+    link: "/ai-development",
     description:
       "Build intelligent systems with advanced AI capabilities, including reasoning, natural language understanding, and autonomous decision-making.",
     icon: BrainCircuit,
     bgColor: "bg-indigo-900",
   },
 ];
-
 
 export const whyChooseUs = [
   "Expertise in Emerging Technologies: Our team is skilled in the latest technologies and trends to ensure that your solutions are always ahead of the curve.",

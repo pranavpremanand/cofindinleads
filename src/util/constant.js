@@ -95,7 +95,7 @@ import legal from "../assets/images/industries/Legal.webp";
 
 export const companyDetails = {
   name: "CoFindinLeads",
-  email: "Support@cofindinleads.com",
+  email: "support@cofindinleads.com",
   phone: "+91-7996767333",
   address:
     "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Bengaluru, Karnataka 560076",

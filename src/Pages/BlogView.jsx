@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { blogPosts } from "../util/blog";
 import BlogBody from "../Components/blog/blogBody";
 import RoundedHeader from "../Components/RoundedHeader";
-import ViewBlogHeader from "../Components/blog/viewBlogHeader";
+import ViewBlogHeader from "../Components/blog/ViewBlogHeader";
 import ViewBlogContent from "../Components/blog/ViewBlogContent";
 import Faq from "../Components/Faq";
 

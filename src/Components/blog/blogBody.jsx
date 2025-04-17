@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function BlogBody({ imageUrl, title, summary, id }) {
+function BlogBody({ imageUrl, title, id, html }) {
   return (
     <>
       <article
@@ -24,8 +24,8 @@ function BlogBody({ imageUrl, title, summary, id }) {
               {title}
             </h2>
           </Link>
-          <p className="text-gray-700 mb-3 dark:text-white line-clamp-5">
-            {summary}
+          <p className="text-gray-700 mb-3 dark:text-white line-clamp-3">
+            {html.replace(/<[^>]*>"?/gm, "").substring(0, 150)}
           </p>
         </div>
       </article>

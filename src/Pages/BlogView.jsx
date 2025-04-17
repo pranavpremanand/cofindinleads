@@ -4,7 +4,6 @@ import { blogPosts } from "../util/blog";
 import BlogBody from "../Components/blog/blogBody";
 import RoundedHeader from "../Components/RoundedHeader";
 import ViewBlogHeader from "../Components/blog/ViewBlogHeader";
-import ViewBlogContent from "../Components/blog/ViewBlogContent";
 import Faq from "../Components/Faq";
 
 function BlogView() {
@@ -30,14 +29,17 @@ function BlogView() {
 
   return (
     <div className="relative bg-white dark:bg-darkblack overflow-x-hidden max-w-screen">
-      <div className="relative max-w-3xl mx-auto px-4  pt-[7rem]   overflow-hidden ">
+      <div className="relative max-w-5xl mx-auto px-4 space-y-10 pt-[7rem] overflow-hidden ">
         <ViewBlogHeader
           image={blog.imageUrl}
           title={blog.title}
           // readTime={blog.readTime}
           // date={blog.date}
         />
-        <ViewBlogContent blogdetails={blog} />
+        <div
+          className="text-black dark:text-white/90"
+          dangerouslySetInnerHTML={{ __html: blog.html }}
+        />
       </div>
       <div className="wrapper paddingtop">
         <div className="flex justify-center items-center flex-col">

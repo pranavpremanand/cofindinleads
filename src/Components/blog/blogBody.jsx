@@ -25,7 +25,7 @@ function BlogBody({ imageUrl, title, id, html }) {
             </h2>
           </Link>
           <p className="text-gray-700 mb-3 dark:text-white line-clamp-3">
-            {html.replace(/<[^>]*>"?/gm, "").substring(0, 150)}
+            {html.replace(/<[^>]*>"?/gm, "").substring(0, 150)}...
           </p>
         </div>
       </article>

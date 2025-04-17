@@ -24,7 +24,7 @@ function ViewBlogContent({ blogdetails }) {
         </h2>
         <ul
           data-aos="fade-up"
-          className="list-disc list-inside text-black dark:text-gray-400"
+          className="list-disc list-inside text-black dark:text-gray-400 space-y-5"
         >
           {blogdetails.content.map((point, index) => (
             <li key={index}>{point}</li>
